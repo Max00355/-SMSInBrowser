@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+        
+    <iframe src="/text/raw/" height=100%  width=24% style="float:left"></iframe>
+    <iframe src="/text/raw/{{ number }}" height=90% width=75% style="float:right;"></iframe>
+    <span style="padding:8px;">
+        <form method="POST">
+        <input style="width:70%; padding:15px;" type="text" name="text" placeholder="Text Message"/>
+    </form>
+    </span>
+    <form method="POST"><input type="text" name="label" placeholder="Label This Conversation"/></form> 
+{% endblock %}

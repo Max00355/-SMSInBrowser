@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+    <div id="loginForm">
+        <form method="POST" class="form-control">
+            <h1>Register</h1>
+            <input type="text" name="username" placeholder="Username"/>
+            <input type="password" name="password" placeholder="Password"/>
+            <button type="submit" name="submit" id="btn">Register</button>
+            <center><a href="/login/">Already have an account? Login</a></center>
+        </form>
+    </div>
+{% endblock %}

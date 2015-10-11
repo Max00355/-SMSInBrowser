@@ -1,0 +1,28 @@
+<meta http-equiv="refresh" content="5">
+<style>
+    .sent {
+        
+        color: white;
+        background: #0C2C52;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    
+    .received {
+
+            color: white;
+            background: #5F6B61;
+            padding: 10px;
+            border-radius: 5px;
+
+
+    }
+
+</style>
+
+<center>
+{% for x in conversation %}
+<p>{% if x['sent'] %} <div class="sent">{{ x['message'] }}</div> {% else %} <div class="received">{{ x['message'] }}</div> {% endif %}</p>
+{% endfor %}
+</center>

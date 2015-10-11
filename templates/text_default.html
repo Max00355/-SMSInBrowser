@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+<center>
+    <h1>Conversations</h1>
+    <div class="scrollDiv small centerText border-left border-top border-bottom border-right">
+        {% for x in conversations %}
+        <div id="inScrollDiv" class="fontLarge">
+            <a href="/text/{{ conversations[x]['number'] }}">{{ fetchLabel( conversations[x]['number'] , session['login']) }}</a><br/>                                                                               
+            <span id="sampleText" class="fontSmall">{{ conversations[x]['message'][:25] }}</span>
+            <br/><br/>
+        </div> 
+        {% endfor %}
+    </div>
+</center>
+{% endblock %}

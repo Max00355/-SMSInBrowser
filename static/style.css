@@ -1,0 +1,148 @@
+html {
+
+    font-family:  sans-serif;
+
+}
+
+
+a {
+
+    text-decoration: none;
+    color: #3366cc;
+}
+
+a:visited {color: #3366cc;}
+
+a:hover { text-decoration: underline;}
+
+h1 { color:#3366cc;}
+
+.form-control h1, .form-control a{
+
+    text-align: center;
+    color: #3366cc;
+
+}
+
+.form-control {
+
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+
+.form-control input {
+    
+    border: 1px solid lightgray;
+    padding: 15px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.form-control button {
+
+    width: 100%;
+
+}
+
+.form-control input, button {
+
+    margin: 5px;
+    
+}
+
+.form-control #btn {
+
+    background: none;
+    border: 1px solid #3366CC;
+    border-radius: 4px;
+    background: #3366CC;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    padding: 15px;
+}
+
+.form-control #btn:hover {
+
+    background: #3366BB;
+    cursor: pointer;
+
+}
+
+
+.scrollDiv {
+    
+    height: 75%;
+    padding: 8px;
+    overflow:auto;
+    border-radius:5px;
+    
+}
+
+.border-right {
+
+    border-right: 1px solid lightGray;
+
+}
+
+.border-top {
+
+    border-top: 1px solid lightGray;
+
+}
+
+.border-left {
+    border-left: 1px solid lightGray;
+}
+
+.border-bottom {
+
+    border-bottom: 1px solid lightGray;
+}
+
+
+.scrollDiv #inScrollDiv {
+
+    padding: 15px;
+
+}
+
+
+.small {
+
+    width: 25%;
+
+}
+
+.tall {
+
+    height: 100%;
+
+}
+
+.large {
+
+    width: 75%;
+
+}
+
+.fontLarge {
+
+    font-size: 25px;
+
+}
+
+.fontSmall {
+
+    font-size: 13px;
+
+}
+
+.centerText {
+
+    text-align: center;
+
+}
