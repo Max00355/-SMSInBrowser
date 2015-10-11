@@ -53,7 +53,7 @@ def text_default():
     for x in conversations:
         if x['number'] not in cout:
             cout[x['number']] = x
-        elif int(x['uid']) < int(cout[x['number']]['uid']):
+        elif int(x['uid']) > int(cout[x['number']]['uid']):
             cout[x['number']] = x
     return render_template("text_default.html", conversations=cout, fetchLabel=fetchLabel)
 
@@ -66,7 +66,7 @@ def text_def_2():
     for x in conversations:
         if x['number'] not in cout:
             cout[x['number']] = x
-        elif int(x['uid']) < int(cout[x['number']]['uid']):
+        elif int(x['uid']) > int(cout[x['number']]['uid']):
             cout[x['number']] = x
     return render_template("text_raw.html", conversations=cout, fetchLabel=fetchLabel)
 
