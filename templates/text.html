@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block body %}
-        
+    <title>{{ fetchLabel(number, session['login']) }}
     <iframe src="/text/raw/" height=100%  width=24% style="float:left"></iframe>
     <iframe src="/text/raw/{{ number }}" height=90% width=75% style="float:right;"></iframe>
     <span style="padding:8px;">
