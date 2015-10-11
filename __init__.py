@@ -95,7 +95,7 @@ def text_raw_2(number):
 def sendCommand(command, args, username=None):
     if not username:
         username = session['login']
-    if not db.queue.find_one({"username":session['login'], "cmd":command}):
+    if not db.queue.find_one({"username":username, "cmd":command}):
         db.queue.insert({"username":username, "args":args, "cmd":command})
 
 @app.route("/api/sendUnreadMessages/<data>/<key>")
